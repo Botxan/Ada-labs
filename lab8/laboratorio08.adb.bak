@@ -1,0 +1,81 @@
+package body Laboratorio08 is
+
+   -------------
+   -- Comunes --
+   -------------
+
+   function Comunes (V1,V2: in T_vector_enteros) return Natural is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Comunes unimplemented");
+      raise Program_Error with "Unimplemented function Comunes";
+      return Comunes (V1, V2);
+   end Comunes;
+
+   ---------------
+   -- Encriptar --
+   ---------------
+
+   procedure Encriptar
+     (N,Clave: in T_Vector_Enteros;
+      Num: out T_Vector_Enteros)
+   is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Encriptar unimplemented");
+      raise Program_Error with "Unimplemented procedure Encriptar";
+   end Encriptar;
+
+   -----------------------
+   -- Insertar_En_Medio --
+   -----------------------
+
+   procedure Insertar_En_Medio (L: in out T_Lista_Estatica; Num: in Integer)
+   is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Insertar_En_Medio unimplemented");
+      raise Program_Error with "Unimplemented procedure Insertar_En_Medio";
+   end Insertar_En_Medio;
+
+   -----------------------
+   -- Borrar_Intermedio --
+   -----------------------
+
+   procedure Borrar_Intermedio (L: in out T_Lista_Estatica) is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Borrar_Intermedio unimplemented");
+      raise Program_Error with "Unimplemented procedure Borrar_Intermedio";
+   end Borrar_Intermedio;
+
+   --------------------------------------
+   -- Obtener_Num_Vecinos_por_Vivienda --
+   --------------------------------------
+
+   procedure Obtener_Num_Vecinos_por_Vivienda
+     (C: in T_Comunidad;
+      R:out T_Rascacielos)
+   is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Obtener_Num_Vecinos_por_Vivienda unimplemented");
+      raise Program_Error with "Unimplemented procedure Obtener_Num_Vecinos_por_Vivienda";
+   end Obtener_Num_Vecinos_por_Vivienda;
+
+   ----------------------
+   -- Obtener_Consumos --
+   ----------------------
+
+   procedure Obtener_Consumos
+     (E: in T_Edificio;
+      Consumo_electrico: out Float;
+      Consumo_gas: out T_Consumo_Medio_Manos)
+   is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Obtener_Consumos unimplemented");
+      raise Program_Error with "Unimplemented procedure Obtener_Consumos";
+   end Obtener_Consumos;
+
+end Laboratorio08;

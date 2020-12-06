@@ -1,0 +1,10 @@
+with ada.Text_IO, ada.Integer_Text_IO, Laboratorio04;
+use ada.Text_IO, ada.Integer_Text_IO, Laboratorio04;
+
+procedure pruebas is
+     num, resultado: Natural;
+begin
+   put("Introduce un numero de 4 cifras: ", num);
+   iteracion_kaprekar(num, resultado);
+   put("El resultado es: " & iteracion_kaprekar(num));
+end pruebas;

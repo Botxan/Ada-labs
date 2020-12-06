@@ -1,0 +1,53 @@
+V "GNAT Lib v2020"
+M P W=b
+A -gnatwu
+P ZX
+
+RN
+RV NO_IO
+
+U numero_misterioso%b	numero_misterioso.adb	ccdf9357 NE OO SU IL KU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-inteio.ads		20200819050644 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200819050644 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D numero_misterioso.adb	20201030202702 9460cf9e numero_misterioso%b
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [numero_misterioso standard 4 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r19 2r5 2r18
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|1w23 2r22
+X 7 a-textio.ads
+57K13*Text_IO 727e16 12|1w10 2r9
+X 8 a-tiinio.ads
+80U14*Put 12|25s7[3|18]
+X 12 numero_misterioso.adb
+4U11*numero_misterioso 4b11 30l5 30t22
+5i4 num{positive} 13m7 18m10 18r17 19m10 19r17 21m10 21r17 22m10 22r17 25r11
+12i8 i{integer} 17r10
+

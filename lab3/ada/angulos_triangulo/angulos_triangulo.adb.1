@@ -1,0 +1,20 @@
+FROM
+
+FUNCTION tipo_triangulo(a1, a2, a3: Float) return String IS
+   -- Datos: A1, A2 y A3 son los angulos (en grados) de un triangulo
+   -- Pre: 0.0 < A1, A2, A3 <180.0
+
+   -- Resultado: una variable de tipo T_TRIANGULO que puede ser equilatero, isosceles o escaleno
+   -- Post: NO_TRIANGULO <--> no suman 180;
+   --       EQUILATERO   <--> si son iguales
+   --       ISOSCELES    <--> si dos iguales
+   --       ESCALENOS    <--> si todos distintos
+BEGIN
+
+   if (a1 > 0 or a2 > 0 or a > 0 ) and (a1 + b1 + c1 < 180) then
+
+   else
+      raise constraint_error with "Los angulos tienen que ser mayores de 0 grados y la suma de ellos ha de ser menor que 180 grados ";
+   end if;
+
+END angulos_triangulo;

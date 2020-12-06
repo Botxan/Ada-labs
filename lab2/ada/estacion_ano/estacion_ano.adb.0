@@ -1,0 +1,32 @@
+with Ada.Text_IO, Ada.Integer_Text_IO;
+use ada.Text_IO, Ada.Integer_Text_IO;
+
+FUNCTION estacion_ano(dd, mm: Positive) return String IS
+   dias_en_mes: Integer := 31 - (if mm = 2 then 2 else (mm - 1) rem 7 rem 2);
+   estacion: string(1..9);
+BEGIN
+
+   if (dd > 0 and dd <= dias_en_mes) and (mm > 0 and mm <= 12) then
+      if (mm >= 3 and dd >= 21) and (mm <= 6 and dd <= 20) then
+         estacion := "primavera";
+         put("unoooo: ");
+         new_line;
+         put(estacion);
+         new_line;
+      elsif (mm >= 6 and dd>= 21) and (mm <= 9 and dd <= 20) then
+         put("doooos");
+         estacion := "verano";
+      elsif (mm >= 9 and dd>= 21) and (mm <= 12 and dd <= 20) then
+         estacion := "otono";
+      elsif (mm >= 12 and dd>= 21) and (mm <= 3 and dd <= 20) then
+         estacion := "invierno";
+      else
+         put("Fueraaa");
+      end if;
+   else
+       raise constraint_error with "Introduzca un dia y mes correctos";
+   end if;
+
+   return estacion;
+
+END estacion_ano;

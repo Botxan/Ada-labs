@@ -1,0 +1,29 @@
+WITH Ada.Text_IO, longitud_circunferencia_p, longitud_circunferencia_f;
+USE Ada.Text_IO;
+
+PROCEDURE longitud_circunferencia_main IS
+   r: Integer; -- radio de la circunferencia
+   L: Float; -- resultado de la función / el procedimiento
+
+BEGIN
+   -- Procedimiento
+   Put("Demostración del procedimiento \n");
+   Put("Introduce el radio de la circunferencia: ");
+   get(r);
+
+   longitud_circunferencia_p(r, resultado);
+
+   Put("El radio de la circunferencia es: ");
+   put(resultado);
+
+   -- Funcion
+   Put("Demostración de la función");
+   Put("Introduce el radio de la circunferencia: ");
+   get(r);
+
+   longitud_circunferencia_f(r);
+
+   Put("El radio de la circunferencia es: ");
+   put(resultado);
+
+END longitud_circunferencia_main;

@@ -1,0 +1,17 @@
+WITH Ada.Text_IO, Ada.Integer_Text_IO, Laboratorio03.adb;
+USE Ada.Text_IO, Ada.Integer_Text_IO;
+
+PROCEDURE main IS
+
+   num: Integer;
+
+BEGIN
+
+   put("Introduce un codigo ISBN: ");
+   get(num);
+
+   new_line;
+
+   put("El digito de control es: " & Laboratorio03.control_ISBN(num));
+
+END;

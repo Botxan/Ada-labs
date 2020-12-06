@@ -1,0 +1,165 @@
+V "GNAT Lib v2020"
+M P W=b
+A -gnatwu
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+
+U laboratorio08a_pruebas%b  laboratorio08a_pruebas.adb  82a15f1f NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W lab08_escenarios%s	lab08_escenarios.ads	lab08_escenarios.ali
+W laboratorio08%s	laboratorio08.adb	laboratorio08.ali
+Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-flteio.ads		20200819050644 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20200819050644 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-tiflio.ads		20200819050644 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20200819050644 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D lab08_escenarios.ads	20201128151854 375086bd lab08_escenarios%s
+D laboratorio08.ads	20201127032646 5afca441 laboratorio08%s
+D laboratorio08a_pruebas.adb  20201128183032 5638668a laboratorio08a_pruebas%b
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-imgboo.ads		20200819050646 f5d971eb system.img_bool%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [laboratorio08a_pruebas standard 16 11 none]
+G r c none [laboratorio08a_pruebas standard 16 11 none] [comunes laboratorio08 13 13 none]
+G r c none [laboratorio08a_pruebas standard 16 11 none] [encriptar laboratorio08 17 14 none]
+G r c none [laboratorio08a_pruebas standard 16 11 none] [insertar_en_medio laboratorio08 22 14 none]
+G r c none [laboratorio08a_pruebas standard 16 11 none] [borrar_intermedio laboratorio08 25 14 none]
+G r c none [laboratorio08a_pruebas standard 16 11 none] [obtener_num_vecinos_por_vivienda laboratorio08 37 14 none]
+G r c none [laboratorio08a_pruebas standard 16 11 none] [obtener_consumos laboratorio08 49 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 16|1r6 2r5 4r6 5r5 7r6 8r5
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 16|7w10 8r9
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 16|4w10 5r9
+X 8 a-textio.ads
+57K13*Text_IO 727e16 16|1w10 2r9
+264U14*New_Line 16|48s30 54s17 61s17 68s17 75s17 81s17 95s11 104s11 113s11
+. 120s11 135s11 145s11 155s11 165s11 175s11 189s11 198s11 207s11 215s11 242s51
+. 251s51 260s51 270s24 274s11 277s31 281s11 286s24 290s11 293s31 297s11
+465U14*Put 16|242s1 251s1 260s1 273s30 280s31 289s30 296s31
+508U14*Put_Line 16|48s1 49s1 50s1 56s1 57s1 63s1 64s1 70s1 71s1 77s1 78s1
+. 87s1 88s1 89s1 97s1 98s1 106s1 107s1 115s1 116s1 126s1 127s1 128s1 137s1
+. 138s1 147s1 148s1 157s1 158s1 167s1 168s1 181s1 182s1 183s1 191s1 192s1
+. 200s1 201s1 209s1 210s1 221s1 222s1 223s1 231s1 244s1 245s1 253s1 254s1
+. 266s1 267s1 269s1 276s1 283s1 285s1 292s1
+X 9 a-tiflio.ads
+82U14*Put 16|270s1[3|20] 273s4[3|20] 277s1[3|20] 280s4[3|20] 286s1[3|20]
+. 289s4[3|20] 293s1[3|20] 296s4[3|20]
+X 10 a-tiinio.ads
+80U14*Put 16|54s1[4|18] 61s1[4|18] 68s1[4|18] 75s1[4|18] 81s1[4|18] 94s4[4|18]
+. 103s4[4|18] 112s4[4|18] 119s4[4|18] 134s4[4|18] 144s4[4|18] 154s4[4|18]
+. 164s4[4|18] 174s4[4|18] 188s4[4|18] 197s4[4|18] 206s4[4|18] 214s4[4|18]
+X 14 lab08_escenarios.ads
+3K9*Lab08_Escenarios 692e21 16|13w6 14r5
+24a4*C1{15|34A9} 16|230r34
+128a4*C2{15|34A9} 16|246r34
+160a4*C3{15|34A9} 16|255r34
+163a4*R1{15|35A9} 16|239r4
+265a4*R2{15|35A9} 16|248r4
+269a4*R3{15|35A9} 16|257r4
+282a7*E1{15|46A9} 16|268r18
+493a7*E2{15|46A9} 16|284r18
+685f2*Con_Ele_E1{float} 16|270r5
+686a2*Cmm_Gas_E1{15|47A9} 16|272r10 273r8
+688f2*Con_Ele_E2{float} 16|286r5
+689a2*Cmm_Gas_E2{15|47A9} 16|288r10 289r8
+X 15 laboratorio08.ads
+2K9*Laboratorio08 53e18 16|10w6 11r5
+3A9*T_Vector_Enteros(integer)<integer> 16|18r5 19r5 20r9 21r5 24r4 25r5 26r8
+. 27r6 28r8 30r9 31r5 32r6
+5R9*T_Lista_Estatica 8e14 16|35r4
+6a7*Dato{3A9} 16|130m3 134r10 140m3 144r10 150m3 154r10 160m3 164r10 170m3
+. 174r10 185m3 188r10 194m3 197r10 203m3 206r10 214r10
+7i7*cont{natural} 16|129m3 130r13 133r15 139m3 140r13 143r15 149m3 153r15
+. 159m3 160r10 163r15 169m3 170r13 173r15 184m3 185r13 187r15 193m3 194r13
+. 196r15 202m3 203r13 205r15 211m3 213r15
+13V13*Comunes{natural} 16|53s13 60s13 67s13 74s13 80s13
+17U14*Encriptar 16|92s1 101s1 110s1 117s1
+22U14*Insertar_En_Medio 16|132s1 142s1 152s1 162s1 172s1
+25U14*Borrar_Intermedio 16|186s1 195s1 204s1 212s1
+34A9*T_Comunidad(29R9)<integer>
+35A9*T_Rascacielos(natural)<integer><character> 16|37r4
+37U14*Obtener_Num_Vecinos_por_Vivienda 16|230s1 246s1 255s1
+46A9*T_Edificio(41R9)<character><integer>
+47A9*T_Consumo_Medio_Manos(float)<character> 16|41r14
+49U14*Obtener_Consumos 16|268s1 284s1
+X 16 laboratorio08a_pruebas.adb
+16U11*laboratorio08a_pruebas 16b11 299l5 299t27
+18a1 V1{15|3A9} 51m1 53r21 58m1 60r21 65m1 67r21
+19a1 V2{15|3A9} 52m1 53r24 59m1 60r24 66m1 67r24
+20a1 V3{15|3A9} 72m1 74r21
+20a5 V4{15|3A9} 73m1 74r24 79m1 80r24
+21a1 Vv{15|3A9} 28r25 80r21 117r11 117r14
+22i1 Comunes_r{natural} 53m1 54r5 60m1 61r5 67m1 68r5 74m1 75r5 80m1 81r5
+24a1 N{15|3A9} 90m1 92r11
+25a1 N2{15|3A9} 99m1 101r11
+26a1 Clave{15|3A9} 27r23 91m1 92r13 100m1 101r14
+27a1 Num{15|3A9} 92m19 93r10 94r8 101m20 102r10 103r8
+28a1 Num_v{15|3A9} 117m17 118r10 119r8
+30a1 number{15|3A9} 108m1 110r11
+31a1 cl{15|3A9} 32r23 109m1 110r19
+32a1 res{15|3A9} 110m23 111r10 112r8
+34i1 Nn{integer} 131m1 132r21 141m1 142r21 151m1 152r21 161m1 162r21 171m1
+. 172r21
+35r1 L{15|5R9} 129m1 130m1 130r11 132m19 132r19 133r13 134r8 139m1 140m1
+. 140r11 142m19 142r19 143r13 144r8 149m1 150m1 152m19 152r19 153r13 154r8
+. 159m1 160m1 160r8 162m19 162r19 163r13 164r8 169m1 170m1 170r11 172m19
+. 172r19 173r13 174r8 184m1 185m1 185r11 186m19 186r19 187r13 188r8 193m1
+. 194m1 194r11 195m19 195r19 196r13 197r8 202m1 203m1 203r11 204m19 204r19
+. 205r13 206r8 211m1 212m19 212r19 213r13 214r8
+37a1 R{15|35A9} 230m37 239r9 246m37 248r9 255m37 257r9
+38b1 Respuesta{boolean} 240m4 242r19 242m32 249m4 251r19 251m32 258m4 260r19
+. 260m32
+40f1 Consumo_electrico{float} 268m22 277r5 284m22 293r5
+41a1 Consumo_gas{15|47A9} 268m41 279r10 280r8 284m41 295r10 296r8
+93i5 i{integer} 94r12
+102i5 i{integer} 103r12
+111i5 i{integer} 112r12
+118i5 i{integer} 119r14
+133i5 i{integer} 134r15
+143i5 i{integer} 144r15
+153i5 i{integer} 154r15
+163i5 i{integer} 164r15
+173i5 i{integer} 174r15
+187i5 i{integer} 188r15
+196i5 i{integer} 197r15
+205i5 i{integer} 206r15
+213i5 i{integer} 214r15
+272e5 i{character} 273r19
+279e5 i{character} 280r20
+288e5 i{character} 289r19
+295e5 i{character} 296r20
+

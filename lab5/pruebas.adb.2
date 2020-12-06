@@ -1,0 +1,17 @@
+WITH Ada.Text_IO, Ada.Integer_Text_IO; --num_misterioso;
+USE Ada.Text_IO, Ada.Integer_Text_IO;
+
+PROCEDURE pruebas IS
+   d1, d2, d3, posibilidades: Natural;
+BEGIN
+   for i in 1..999 loop
+      d1:= i / 100 rem 10;
+      d2:= i / 10 rem 10;
+      d3:= i rem 10;
+      if d1 /= 0 and d1 /= 5 and d2 /= 0 and d2 /= 5 and d3 /= 0 and d3 /= 5 and (d1 /= d2) and (d2 /= d3) and (d1 /= d3) and ((d1 + d2 + d3) rem 3 = 0) then
+         put(i);
+         new_line;
+      end if;
+
+   end loop;
+END pruebas;

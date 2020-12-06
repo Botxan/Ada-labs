@@ -1,0 +1,1 @@
+sujetos = ["marido1", "marido2", "marido3", "mujer1", "mujer2", "mujer3"]

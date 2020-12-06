@@ -1,0 +1,13 @@
+PROCEDURE km_hm_dam_m_p(m_in: in Integer; km: out Integer; hm: out Integer; dam: out Integer; m: out Integer) IS
+   -- Pre: m > 0;
+   -- Post:
+      -- km := (m_in / 1000) rem 10;
+      -- hm := (m_in / 100) rem 10;
+      -- dam := (m_in / 10) rem 10;
+      -- m: m_in rem 10;
+BEGIN
+   km := m_in / 1000;
+   hm := Integer(m_in / 100) rem 10;
+   dam := Integer(m_in / 10) rem 10;
+   m := m_in rem 10;
+END km_hm_dam_m_p;

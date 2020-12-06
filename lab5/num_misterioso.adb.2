@@ -1,0 +1,28 @@
+WITH Ada.Text_IO, Ada.Integer_Text_IO;
+USE Ada.Text_IO, Ada.Integer_Text_IO;
+
+procedure Num_Misterioso (Num:out String) is
+
+   function son_distintos(num: String) return Boolean IS
+      numeros := "1234567890";
+   BEGIN
+
+      for  i in num'range loop
+
+      end loop;
+
+   END son_distintos;
+
+begin
+   -- comprobar que cada n digitos es divisible entre n
+   -- a ver, que cojones estoy haciendo, estamos tontos o que
+   for i in 100000000..999999999 loop
+      if (i / 10**8 rem 1 = 0) and (i / 10**7 rem 2 = 0) and (i / 10** 6 rem 3 = 0) and (i / 10**5 rem 4 = 0) and (i / 10**4 rem 5 = 0) and (i / 10**3 rem 6 = 0) and (i / 10**2 rem 7 = 0) and (i / 10 rem 8 = 0) and i rem 10 = 0 then
+         if son_distintos(i'img) then
+            put("El numero en cuestion: " & i'img);
+            num := i'img & '0';
+         end if;
+      end if;
+   end loop;
+
+end Num_Misterioso;

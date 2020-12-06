@@ -1,0 +1,24 @@
+WITH Ada.Text_IO, Ada.Integer_Text_IO, dia_anterior;
+USE Ada.Text_IO, Ada.Integer_Text_IO;
+
+PROCEDURE main IS
+   yy: Natural;
+   mm, dd: Positive;
+BEGIN
+
+   put("Introduzca el dia: ");
+   get(dd);
+
+   put("Introduzca el mes: ");
+   get(mm);
+
+   put("Introduzca el año: ");
+   get(yy);
+
+   dia_anterior(yy, mm, dd);
+
+   new_line;
+
+   put("El dia anterior a la fecha introducida es: " & Integer'Image(dd) & "/" & Integer'Image(mm) & "/" & Integer'Image(yy));
+
+END main;

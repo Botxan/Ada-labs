@@ -1,0 +1,20 @@
+V "GNAT Lib v2020"
+A -gnatwu
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+
+U diferencia_dos_numeros%b  diferencia_dos_numeros.adb  58f8ac91 NE OO SU IL KU
+
+D diferencia_dos_numeros.adb  20200923094626 58f8ac91 diferencia_dos_numeros%b
+D system.ads		20200819050648 32a08138 system%s
+G a e
+G c Z b b [diferencia_dos_numeros standard 1 10 none]
+X 1 diferencia_dos_numeros.adb
+1V10*diferencia_dos_numeros{integer} 1b10 1>33 1>39 18l5 18t27
+1i33 num1{integer} 8r8 9r21 10r11 11r28
+1i39 num2{integer} 8r15 9r28 10r18 11r21
+6i4 diferencia{integer} 9m7 11m7 13m7 16r11
+

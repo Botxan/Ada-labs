@@ -1,0 +1,31 @@
+V "GNAT Lib v2020"
+A -gnatwu
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+
+U dia_anterior%b	dia_anterior.adb	07da188f NE OO SU IL KU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D dia_anterior.adb	20200929213510 07da188f dia_anterior%b
+D system.ads		20200819050648 32a08138 system%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+G a e
+G c Z b b [dia_anterior standard 1 11 none]
+X 4 dia_anterior.adb
+1U11*dia_anterior 1b11 1=24 1=44 1=48 34l5 34t17
+1i24 yy{natural} 15r14 18m13 18r19 25r27 25r47 25r68
+1i44 mm{positive} 13r11 14m10 21m10 21r16 29r22 29r58
+1i48 dd{positive} 12r8 29m7 31m7 31r13
+9i4 es_bisiesto{integer} 25m7 29r39
+

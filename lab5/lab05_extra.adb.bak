@@ -1,0 +1,154 @@
+with ada.Text_IO, ada.Float_Text_IO, ada.Integer_Text_IO;
+use ada.Text_IO, ada.Float_Text_IO, ada.Integer_Text_IO;
+
+package body Lab05_Extra is
+
+   --------------------
+   -- Num_Misterioso --
+   --------------------
+
+   procedure Num_Misterioso (Num:out String) is
+      n: Integer := 123456789;
+      n1: 1; n2: 2; n3: 3; n4: 4; n5: 5; n6: 6; n7: 7; n8: 8; n9: 9;
+   begin
+      if
+   end Num_Misterioso;
+
+   ----------------------------
+   -- Incluir_Digito_Control --
+   ----------------------------
+
+   procedure Incluir_Digito_Control (Tarjeta: in out T_Vector16) is
+      suma: Natural := 0;
+   begin
+      for i in Tarjeta'First..Tarjeta'Last-1 loop
+         put("Numero: " & taRJETA(I)'img);
+         new_line;
+         if i rem 2 = 0 then
+            suma := suma + Tarjeta(i);
+         else
+            if Tarjeta(i) < 5 then
+               suma := suma + 2 * Tarjeta(i);
+            else
+               suma := suma + (2 * Tarjeta(i) - 9);
+            end if;
+         end if;
+         put("Suma: " & suma'img);
+         new_line(3);
+      end loop;
+      Tarjeta(16) := 10 - suma rem 10;
+   end Incluir_Digito_Control;
+
+   -----------------
+   -- Es_Correcta --
+   -----------------
+
+   function Es_Correcta(Tarjeta: in T_Vector16) return Boolean is
+      suma: Natural := 0;
+      es_correcta: Boolean;
+   begin
+      for i in Tarjeta'Range loop
+         if i rem 2 = 0 then -- posicion es par
+            suma := suma + Tarjeta(i);
+         else
+            if Tarjeta(i) < 5 then
+               suma := suma + 2 * Tarjeta(i);
+            else
+               suma := suma + (2 * Tarjeta(i) - 9);
+            end if;
+         end if;
+         put(suma);
+         new_line;
+      end loop;
+      if suma rem 10 = 0 then
+         es_correcta := True;
+      end if;
+         return es_correcta;
+   end Es_Correcta;
+
+   --------------------------
+   -- Incluir_Digitos_IBAN --
+   --------------------------
+
+   procedure Incluir_Digitos_IBAN (Pais: in String; BAnco, Sucursal: in Integer; Numero_Cuenta: in T_Vector10; IBAN: out STRING) is
+      c1, c2: Natural;
+      c1_vec: T_Vector10;
+      rem_97: Natural := 0;
+      codigo_control: Natural;
+      i_cuenta: Natural := 0;
+   begin
+      -- Build c1
+      c1_vec(1) := 0;
+      c1_vec(2) := 0;
+      for i in 1..4 loop
+         c1_vec(i+2) := banco / 10**(4-i) mod 10;
+         c1_vec(i+6) := sucursal / 10**(4-i) mod 10;
+      end loop;
+
+      c1 := digito_control(c1_vec);
+
+      -- Build c2
+      c2 := digito_control(numero_cuenta);
+
+      -- rem97 banco
+      for i in reverse 1..4 loop
+         rem_97 := (rem_97 * 10 + (banco / (10 ** (i-1)) mod 10)) mod 97;
+      end loop;
+
+      -- rem97 sucursal
+      for i in reverse 1..4 loop
+          rem_97 := (rem_97 * 10 + (sucursal / (10 ** (i-1)) mod 10)) mod 97;
+      end loop;
+
+      -- rem97 digito de control 1
+      rem_97 := (rem_97 * 10 + (c1)) mod 97;
+
+      -- rem97 digito de control 2
+      rem_97 := (rem_97 * 10 + (c2)) mod 97;
+
+      -- rem97 numero de cuenta
+      for i in numero_cuenta'range loop
+         rem_97 := (rem_97 * 10 + numero_cuenta(i)) mod 97;
+      end loop;
+
+      -- rem97 digito pais 1
+      rem_97 := (rem_97 * 10 + ((Character'Pos(pais(pais'first)) - 55))) mod 97;
+
+      -- rem97 digito pais 2
+      rem_97 := (rem_97 * 10 + ((Character'Pos(pais(pais'last)) - 55))) mod 97;
+
+      -- rem97 ultimos 0's
+      for i in 1..2 loop
+         rem_97 := (rem_97 * 10) mod 97;
+      end loop;
+
+      codigo_control := 98 - rem_97;
+      IBAN(Iban'First..Iban'First+4) := pais(pais'first) & pais(pais'last) & Character'Val(((codigo_control / 10) mod 10) + 48) & Character'Val((codigo_control mod 10) + 48) & ' ';
+
+      IBAN(IBAN'first + 9) := ' ';
+
+      for i in 1..4 loop
+         iban(i+5) := Character'Val((banco / 10 ** (4-i) mod 10) + 48);
+         iban(i+10) := Character'Val((sucursal / 10 ** (4-i) mod 10) + 48);
+      end loop;
+
+      iban(15) := ' ';
+      iban(20) := ' ';
+      iban(25) := ' ';
+      iban(Iban'First + 15) := Character'Val((c1) + 48);
+      iban(Iban'First + 16) := Character'Val((c2) + 48);
+
+      for i in 1..10 loop
+         if i >= 1 and i <= 2 then
+            IBAN(17+i) := Character'Val((numero_cuenta(i)) + 48);
+         elsif i >= 3 and i <= 6 then
+            IBAN(18+i) := Character'Val((numero_cuenta(i)) + 48);
+         elsif i >= 7 and i <= 10 then
+            IBAN(19+i) := Character'Val((numero_cuenta(i)) + 48);
+         end if;
+      end loop;
+
+      put(IBAN);
+   end Incluir_Digitos_IBAN;
+
+end Lab05_Extra;

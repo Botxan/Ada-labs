@@ -1,0 +1,152 @@
+with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO, Ada.Numerics.Elementary_Functions;
+use Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO, Ada.Numerics.Elementary_Functions;
+
+package body Laboratorio07a is
+
+   ----------
+   -- esta --
+   ----------
+
+   function esta (L: in T_Lista_Estatica; N: in Integer) return Boolean is
+      i: Positive := 1;
+      encontrado: Boolean := False;
+   begin
+      while not encontrado and i /= L.cont+1 loop
+         encontrado := L.Dato(L.Dato'First + i - 1) = N;
+         i := i + 1;
+      end loop;
+      return encontrado;
+   end esta;
+
+   --------------
+   -- posicion --
+   --------------
+
+   function posicion (L: in T_Lista_Estatica; Num: in Integer) return Integer is
+      i: Positive := 1;
+      encontrado: Boolean;
+   begin
+      loop
+         encontrado := L.Dato(L.Dato'First + i - 1) = Num;
+         exit when encontrado or i = L.cont+1;
+         i := i + 1;
+      end loop;
+
+      if not encontrado then
+         i := Integer'Last;
+      end if;
+
+      return i;
+   end posicion;
+
+   -----------
+   -- Polar --
+   -----------
+
+   function Polar (C: in T_Complejo_tri) return T_complejo_polar is
+   begin
+      return (abs(sqrt(C.A**2 + C.B**2)), (arctan(C.B/C.A) * 180.0 / Ada.Numerics.PI));
+   end Polar;
+
+   -----------------
+   -- Son_Iguales --
+   -----------------
+
+   function Son_Iguales (L1, L2: in T_Lista_Estatica) return Boolean is
+      iguales: Boolean := True;
+      i: Integer :=  1;
+      j: Integer :=  1;
+   begin
+      if L1.Cont = L2.Cont then
+         while iguales and i /= L1.cont+1 loop
+            iguales := L1.Dato(i) = L2.Dato(j);
+            put("Estamos comparando :");
+            put(L1.dato(i));
+            put(L2.Dato(j));
+            new_line(3);
+            i := i + 1;
+            j := j + 1;
+         end loop;
+      end if;
+
+      return iguales;
+   end Son_Iguales;
+
+   -----------------------
+   -- eliminar_elemento --
+   -----------------------
+
+   procedure eliminar_elemento
+     (num: in Integer;
+      L: in out T_Lista_Estatica)
+   is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "eliminar_elemento unimplemented");
+      raise Program_Error with "Unimplemented procedure eliminar_elemento";
+   end eliminar_elemento;
+
+   ------------------------------
+   -- insertar_elemento_en_pos --
+   ------------------------------
+
+   procedure insertar_elemento_en_pos
+     (num, pos: in Integer;
+      L: in out T_Lista_Estatica)
+   is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "insertar_elemento_en_pos unimplemented");
+      raise Program_Error with "Unimplemented procedure insertar_elemento_en_pos";
+   end insertar_elemento_en_pos;
+
+   ----------------
+   -- Pos_Maximo --
+   ----------------
+
+   function Pos_Maximo (L: in T_Lista_Estatica) return Integer is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Pos_Maximo unimplemented");
+      raise Program_Error with "Unimplemented function Pos_Maximo";
+      return Pos_Maximo (L => L);
+   end Pos_Maximo;
+
+   ---------------------
+   -- Ordenar_Burbuja --
+   ---------------------
+
+   procedure Ordenar_Burbuja (L: in out T_Lista_Estatica) is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Ordenar_Burbuja unimplemented");
+      raise Program_Error with "Unimplemented procedure Ordenar_Burbuja";
+   end Ordenar_Burbuja;
+
+   --------------
+   -- Posicion --
+   --------------
+
+   procedure Posicion
+     (M: in T_Matriz;
+      Num: in Integer;
+      Fil,Col: out Integer)
+   is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Posicion unimplemented");
+      raise Program_Error with "Unimplemented procedure Posicion";
+   end Posicion;
+
+   ------------
+   -- Maximo --
+   ------------
+
+   procedure Maximo (M: in T_Matriz; Maximo,Fila,Columna: out Integer) is
+   begin
+      --  Generated stub: replace with real body!
+      pragma Compile_Time_Warning (Standard.True, "Maximo unimplemented");
+      raise Program_Error with "Unimplemented procedure Maximo";
+   end Maximo;
+
+end Laboratorio07a;

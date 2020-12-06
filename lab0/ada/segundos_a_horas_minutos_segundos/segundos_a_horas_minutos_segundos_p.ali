@@ -1,0 +1,21 @@
+V "GNAT Lib v2020"
+A -gnatwu
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+
+U segundos_a_horas_minutos_segundos_p%b  segundos_a_horas_minutos_segundos_p.adb  ece4a217 NE OO SU IL KU
+
+D segundos_a_horas_minutos_segundos_p.adb  20200919140244 ece4a217 segundos_a_horas_minutos_segundos_p%b
+D system.ads		20200819050648 32a08138 system%s
+G a e
+G c Z b b [segundos_a_horas_minutos_segundos_p standard 1 11 none]
+X 1 segundos_a_horas_minutos_segundos_p.adb
+1U11*segundos_a_horas_minutos_segundos_p 1b11 1>47 1<67 1<70 1<75 6l5 6t40
+1i47 seg_in{integer} 3r10 4r12 5r11
+1i67 h{integer} 3m4
+1i70 min{integer} 4m4
+1i75 seg{integer} 5m4
+

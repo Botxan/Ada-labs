@@ -1,0 +1,24 @@
+PROCEDURE segundo_anterior(h, m, s: in out Natural) IS
+BEGIN
+
+   if s=0 then
+
+      s:=59;
+
+      if m=0 then
+
+         m:=59;
+
+         if h=0 then
+            h:=23;
+         else
+            h:=h-1;
+         end if;
+      else
+         m:=m-1;
+      end if;
+   else
+      s:=s-1;
+   end if;
+
+END segundo_anterior;

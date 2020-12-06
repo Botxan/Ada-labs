@@ -1,0 +1,22 @@
+WITH Ada.Text_IO, Ada.Integer_Text_IO, par_o_impar;
+USE Ada.Text_IO, Ada.Integer_Text_IO;
+
+PROCEDURE main is
+   num: Positive;
+   es_par: Boolean;
+BEGIN
+   put("Introduce un numero: ");
+   get(num);
+
+   new_line;
+
+   es_par := par_o_impar(num1);
+   if (es_par) then
+      print("El numero " & Integer'Image(num) & " es par.");
+   else
+      print("El numero " & Integer'Image(num) & " es impar.");
+   end if;
+
+   put("El numero es par: " & Boolean'Image(es_par));
+
+END main;

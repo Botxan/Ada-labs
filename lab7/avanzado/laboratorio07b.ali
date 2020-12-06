@@ -1,0 +1,281 @@
+V "GNAT Lib v2020"
+A -gnatwu
+A -g
+A -gnato
+A -gnatwa
+A -g
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_LOOPS
+
+U laboratorio07b%b	laboratorio07b.adb	1bc9d8be NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+
+U laboratorio07b%s	laboratorio07b.ads	72c9c27a EE NE OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-flteio.ads		20200819050644 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20200819050644 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20200819050644 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20200819050644 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20200819050644 55716239 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-tiflio.ads		20200819050644 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20200819050644 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D laboratorio07b.ads	20201126165244 72c9c27a laboratorio07b%s
+D laboratorio07b.adb	20201126214950 d3dd3cb1 laboratorio07b%b
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [trigon laboratorio07b 24 13 none]
+G c Z s b [dia_siguiente laboratorio07b 26 14 none]
+G c Z s b [maximo laboratorio07b 32 14 none]
+G c Z s s [t_puntoIP laboratorio07b 41 9 none]
+G c Z s b [simplificar laboratorio07b 61 14 none]
+G c Z s b [simplificar laboratorio07b 66 14 none]
+G c Z s b [simplificar laboratorio07b 70 14 none]
+G c Z s b [dni_mayor_patrimonio laboratorio07b 94 13 none]
+G c Z s b [encontrar_espacio_blanco laboratorio07b 105 14 none]
+G c Z s b [rotar_matriz_derecha_90 laboratorio07b 108 14 none]
+G c Z s b [filas_correctas laboratorio07b 110 13 none]
+G c Z s s [t_fechaIP laboratorio07b 4 9 none]
+G c Z s s [t_complejo_triIP laboratorio07b 9 9 none]
+G c Z s s [t_complejo_polarIP laboratorio07b 12 9 none]
+G c Z s s [t_vector_enterosIP laboratorio07b 16 9 none]
+G c Z s s [t_matriz_enterosIP laboratorio07b 17 9 none]
+G c Z s s [Tt_ano_lluviasBIP laboratorio07b 30 4 none]
+G c Z s s [Tt_datos_pluviometricosBIP laboratorio07b 31 4 none]
+G c Z s s [v_puntosIP laboratorio07b 45 9 none]
+G c Z s s [t_estatica_puntosIP laboratorio07b 46 9 none]
+G c Z s s [t_carreteraIP laboratorio07b 50 9 none]
+G c Z s s [v_carreterasIP laboratorio07b 55 9 none]
+G c Z s s [t_estatica_carreterasIP laboratorio07b 56 9 none]
+G c Z s s [t_identificacionIP laboratorio07b 75 9 none]
+G c Z s s [t_info_apartamentoIP laboratorio07b 79 9 none]
+G c Z s s [t_tabla_apartamentosIP laboratorio07b 85 9 none]
+G c Z s s [t_plantaIP laboratorio07b 86 9 none]
+G c Z s s [t_edificioIP laboratorio07b 91 9 none]
+G c Z s s [Tt_urbanizacionBIP laboratorio07b 93 4 none]
+G c Z s s [Tt_puzleBIP laboratorio07b 103 4 none]
+G c Z s s [Tt_fichaBIP laboratorio07b 104 4 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 1r19 1r40 1r59 2r5 2r18 2r39 2r58
+X 3 a-flteio.ads
+20K13*Float_Text_IO[12|46] 18|1w44 2r43
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[13|46] 18|1w23 2r22
+X 6 a-numeri.ads
+16K13*Numerics 32e17 18|1r63 2r62
+X 7 a-nuelfu.ads
+18K22*Elementary_Functions[8|39] 18|1w72 2r71
+X 8 a-ngelfu.ads
+94V13*Sin{float} 18|11s68[7|18]
+103V13*Cos{float} 18|11s34[7|18]
+X 11 a-textio.ads
+57K13*Text_IO 727e16 18|1w10 2r9
+X 17 laboratorio07b.ads
+1K9*Laboratorio07b 114l5 114e19 18|3b14 362l5 362t19
+2I12*T_Dia{integer} 5r12 18|22r20 45r20 47r24
+3E9*T_mes 3e119 6r12 30r32 18|22r34 22r95 32r25 32r35 46r24 80r36 80r95
+3n19*Enero{3E9} 18|29r25 69r27 72r27
+3n26*febrero{3E9}
+3n35*marzo{3E9}
+3n42*abril{3E9}
+3n49*mayo{3E9}
+3n55*junio{3E9}
+3n62*julio{3E9}
+3n69*agosto{3E9}
+3n77*septiembre{3E9}
+3n89*octubre{3E9}
+3n98*noviembre{3E9}
+3n109*diciembre{3E9} 18|28r24 67r26 73r26
+4R9*T_Fecha 8e14 26r38 32r64 32r80 18|18r39 43r65 43r81
+5i7*Dia{2I12} 18|25r12 26m12 35m12 35r21 84r33 88r32
+6e7*Mes{3E9} 18|22r46 22r107 28r18 29m18 32m18 32r47 52r13 52r22 66r30 70r29
+. 83r47 86r50
+7i7*anno{positive} 18|20r49 20r69 20r94 30m18 30r28 52r33 52r43 56r25 56r34
+. 65r26 68r29 83r29 86r32
+9R9*T_Complejo_Tri 11e14 24r52 18|9r52
+10f7*A{float} 18|11m15
+10f9*B{float} 18|11m49
+12R9*T_Complejo_Polar 14e14 24r27 18|9r27
+13f7*Argumento{float} 18|11r22 11r56
+13f18*Angulo{float} 18|11r40 11r74
+16A9*T_Vector_Enteros(integer)<integer> 30r42
+17A9*T_Matriz_Enteros(integer)<integer><integer>
+24V13*Trigon{9R9} 24>21 18|9b13 12l8 12t14
+24r21 C{12R9} 18|9b21 11r20 11r38 11r54 11r72
+26U14*Dia_Siguiente 26=28 18|18b14 37l8 37t21
+26r28 F{4R9} 18|18b29 20r47 20r67 20r92 22r44 22r105 25r10 26m10 28r16 29m16
+. 30m16 30r26 32m16 32r45 35m10 35r19
+30A9*T_Ano_Lluvias(16A9)<3E9> 31r56
+31A9*T_Datos_Pluviometricos(30A9)<integer> 32r32 18|43r33
+32U14*Maximo 32>21 32>56 32>60 32<73 18|43b14 108l8 108t14
+32a21 Lluvia{31A9} 18|43b22 96r50
+32r56 F1{4R9} 18|43b57 52r10 52r30 53r15 56r22 65r23 66r27 83r26 83r44 84r30
+32r60 F2{4R9} 18|43b61 52r19 52r40 56r31 68r26 70r26 86r29 86r47 88r29
+32r73 F{4R9} 18|43b74 53m10 101m19
+38i4*Max_Car{integer} 51r40
+39i4*Max_Carreteras{integer} 57r30
+40i4*Max_Puntos{integer} 47r25
+41R9*T_Punto 43e14 44r24 45r48 18|148r13
+42f7*X{float} 18|197r48 197r86 199r45 199r83
+42f10*Y{float} 18|198r45 198r83 200r45 200r83
+44r4*CENTINELA{41R9} 18|153r58 159r37 164r32 181r37
+45A9*V_Puntos(41R9)<integer> 47r13
+46R9*T_Estatica_Puntos 49e14 53r16 66r36 18|147r37
+47a7*Ptos{45A9} 18|148r26 148r33 150r23 153r37 153r44 159r25 164r22 166m12
+. 166r27 172r12 172r19 178m9 178r16 181m9 181r16 195r38 197r38 197r74 198r35
+. 198r71 199r35 199r71 200r35 200r71 204m41 204r74
+48i7*Num{natural} 18|148r46 175m9 178r29 181r29 196r44 196r74 203r48 208m38
+. 208r67
+50R9*T_Carretera 54e14 55r53
+51a7*Codigo{string}
+51a15*Inicio{string}
+51a23*Final{string}
+52f7*Peaje_km{float} 18|126r24
+53r7*Trazado{46R9} 18|195r30 196r36 196r66 197r30 197r66 198r27 198r63 199r27
+. 199r63 200r27 200r63 203r40 204m33 204r66 208m30 208r59
+55A9*V_Carreteras(50R9)<integer> 57r14
+56R9*T_Estatica_Carreteras 59e14 61r37 62r37 70r36 18|114r38 114r72 188r37
+57a7*Ctras{55A9} 18|116r23 126r15 129m19 129r31 129r62 133r24 133r43 134m18
+. 134r32 192r21 195r18 196r24 196r54 197r18 197r54 198r15 198r51 199r15 199r51
+. 200r15 200r51 203r28 204m21 204r54 208m18 208r47
+58i7*Cont{natural} 18|118m13 125r40 125r53 130m19 130r33 133r57 136m15 136r25
+. 192r36
+61U14*Simplificar 61=26 62<26 18|114b14 141l8 141t19
+61r26 L{56R9} 18|114b27 116r21 125r38 125r51 126r13 129r60 133r22 133r41
+. 133r55 134m16 134r30 136m13 136r23
+62r26 Peaje{56R9} 18|114b61 118m7 129m13 129r25 130m13 130r27
+66U14*Simplificar 66=26 18|147b14 182l8 182t19
+66r26 L{46R9} 18|147b27 148r24 148r31 148r44 150r21 153r35 153r42 159r23
+. 164r20 166m10 166r25 172r10 172r17 175m7 178m7 178r14 178r27 181m7 181r14
+. 181r27
+70U14*Simplificar 70=26 18|188b14 214l8 214t19
+70r26 L{56R9} 18|188b27 192r19 192r34 195r16 196r22 196r52 197r16 197r52
+. 198r13 198r49 199r13 199r49 200r13 200r49 203r26 204m19 204r52 208m16 208r45
+75R9*T_Identificacion 78e14 81r27 82r29
+76a7*Nom{string}
+76a12*Apel{string}
+77i7*Dni{integer} 18|254r108 260r95
+79R9*T_Info_Apartamento 83e14 85r61
+80i7*Precio{integer} 18|263r107
+81r7*Propietario_Actual{75R9} 18|254r89 260r76
+82r7*Propietario_Anterior{75R9}
+84i4*Max_Apartamentos_Por_Planta{integer} 87r47
+85A9*T_Tabla_Apartamentos(79R9)<integer> 87r21
+86R9*T_Planta 89e14 91r51
+87a7*Apartamentos{85A9} 18|245r42 254r69 260r56 263r87
+88i7*Num_Apartamentos{integer} 18|245r78
+90i4*Max_Plantas{integer} 93r71
+91A9*T_Edificio(86R9)<integer> 93r55
+92i4*Num_Bloques{integer} 93r39
+93A9*T_Urbanizacion(91A9)<integer> 94r40 18|228r41
+94V13*DNI_Mayor_Patrimonio{integer} 94>34 18|228b13 277l8 277t28
+94a34 U{93A9} 18|228b35 243r19 244r24 245r26 245r62 254r53 260r40 263r71
+100i4*N{integer} 103r30 103r36
+101i4*M{integer} 104r30 104r36
+102i4*VACIO{integer}
+103A9*T_Puzle(integer)<integer><integer> 105r45 110r36 18|283r46 338r36 351r41
+104A9*T_Ficha(natural)<integer><integer> 108r49 110r55 18|307r49 308r11 338r55
+105U14*encontrar_espacio_blanco 105>39 105<54 105<57 18|283b14 301l8 301t32
+105a39 P{103A9} 18|283b40 284r23 285r23 288r19 290r42 291r16
+105i54 F{integer} 18|283b55 293m16
+105i57 C{integer} 18|283b58 294m16
+108U14*rotar_matriz_derecha_90 108=39 18|307b14 332l8 332t31
+108a39 F{104A9} 18|307b39 308r22 312r18 313r21 314m13 319r18 320r20 321r19
+. 323r21 324m13 324r31 325m13
+110V13*filas_correctas{boolean} 110>30 110>45 110>64 110>67 18|338b13 360l8
+. 360t23
+110a30 P{103A9} 18|338b30 352r26 352r59
+110a45 Ficha{104A9} 18|338b45 352r40 352r73
+110i64 F{integer} 18|338b64 352r28
+110i67 C{integer} 18|338b67 352r66
+X 18 laboratorio07b.adb
+20i7 esBisiesto{integer} 22r71
+22i7 dias_en_mes{17|2I12} 25r18
+44i7 esBisiesto{integer} 62m13 80r71
+45i7 dias_en_mes{17|2I12} 80m16 85r29 91r29
+46e7 m_first{17|3E9} 66m16 69m16 72m16 76r24
+46e16 m_last{17|3E9} 67m16 70m16 73m16 76r33
+47i7 d_first{17|2I12} 84m19 87m19 90m19 95r27
+47i16 d_last{17|2I12} 85m19 88m19 91m19 95r36
+48i7 suma_lluvias{natural} 94m16 96m19 96r35 98r19 99r26
+49i7 max{integer} 98r34 99m19
+56i14 anno{integer} 62r33 62r51 62r74 65r16 68r19 83r19 86r22 96r57 101r33
+76e17 mes{17|3E9} 80r46 80r105 83r38 86r41 96r63 101r28
+95i20 dia{integer} 96r68
+115i7 eliminados{natural} 125r13 128m13 128r27 129r43
+116i7 i{integer} 125r33 126r21 129r68 133r36 138m13 138r18
+133i17 j{integer} 134r24 134r38
+148r7 last{17|41R9} 172r41 178r39
+149i7 pos{integer} 166r17 167m10 167r17
+150i7 i{integer} 159r30 163m10 163r15 164r27 166r32
+151i7 j{integer} 156m10 159r32 159r50 160m13 160r18 163r19
+152i7 cont{natural} 168m10 168r18 172r30 173m10 173r18 175r16
+153b7 cent_encontrado{boolean}
+189i7 i{integer} 202m16 203r22 204r46 204r79 205m19 205r24
+189i10 pto{integer} 195m10 196r16 197r43 197r79 198r40 198r76 199r40 199r76
+. 200r40 200r76 202r20 210m16 210r23
+192i11 ctra{integer} 195r24 196r30 196r60 197r24 197r60 198r21 198r57 199r21
+. 199r57 200r21 200r57 203r34 204r27 204r60 208r24 208r53
+231i7 Max_Propietarios{integer} 235r50
+232R12 T_Dni_Patr 234e17 235r71
+233i10 Dni{integer} 254r47 260m33 273r39
+233i15 Patrimonio{integer} 263m30 263r58 271r28 272r35
+235A12 patrimonios(232R12)<integer> 237r17
+237a7 dni_patr{235A12} 252r22 254r33 255r43 260m19 263m16 263r44 270r19 271r13
+. 272r20 273r24
+238i7 pos{integer} 252m16 254r42 255r52 256m19 256r26 260r28 263r25 263r53
+239b7 encontrado{boolean} 254m19 255r29 259r23
+240i7 max{integer} 271r41 272m13
+240i12 dni_max{integer} 273m13 276r14
+243i11 edif{integer} 244r26 245r28 245r64 254r55 260r42 263r73
+244i14 planta{integer} 245r34 245r70 254r61 260r48 263r79
+245i17 apart{integer} 254r82 260r69 263r100
+270i11 prop{integer} 271r22 272r29 273r33
+284i7 row{integer} 288r13 291r18 293r21 299m10 299r17
+285i7 col{integer} 289m10 290r35 291r23 294r21 296m16 296r23
+286b7 encontrado{boolean} 288r37 290r20 292m16
+308a7 F2{17|104A9} 314r28
+309i7 inicio{integer} 320m10 322r16 323r28 324r20 327m13 327r23
+309i15 final{integer} 321m10 322r25 324r38 325r20 328m13 328r22
+309i22 temp{integer} 323m13 325r30
+312i11 row{integer} 314r20 314r31
+313i14 col{integer} 314r15 314r36
+319i11 row{integer} 323r23 324r15 324r33 325r15
+339b7 existe{boolean} 345r17 348r20 351r23 352m16 359r18
+340i7 i{integer} 345r28 352r30 352r46 352r79 357m10 357r15
+341i7 j{integer} 346m10 348r31 352r51 352r68 352r84 355m13 355r18
+342i7 f_c{integer} 350m13 351r34 352r33 352r61 353m16 353r23
+

@@ -1,0 +1,5 @@
+FUNCTION my_function(param_1: in out integer) return String IS
+   my_string: string(1..5) := "cebol";
+BEGIN
+   return my_string;
+END my_function;

@@ -1,0 +1,24 @@
+-- Funcion que comprueba si el cupon introducido es premiado
+FUNCTION resultado_once(cupon_premiado, cupon: Natural) return Natural IS
+   premio: Natural;
+BEGIN
+
+   if cupon_premiado < 10000 AND cupon < 10000 then
+
+      if (cupon = cupon_premiado) then -- Si todos los numeros coinciden
+         premio := 100000;
+      elsif(cupon rem 1000 = cupon_premiado rem 1000) then -- Si los 3 ultimos numeros coinciden
+         premio := 50000;
+      elsif(cupon rem 100 = cupon_premiado rem 100) then -- Si los 2 ultimos numeros coinciden
+         premio := 3;
+      else
+         premio := 0;
+      end if;
+
+   else
+      raise constraint_error with "Introduce un numero de cupon correcto";
+   end if;
+
+   return premio;
+
+END resultado_once;

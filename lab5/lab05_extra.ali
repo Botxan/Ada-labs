@@ -1,0 +1,124 @@
+V "GNAT Lib v2020"
+A -gnatwu
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U lab05_extra%b		lab05_extra.adb		8425afa9 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.exn_int%s	s-exnint.adb		s-exnint.ali
+Z system.exp_int%s	s-expint.adb		s-expint.ali
+
+U lab05_extra%s		lab05_extra.ads		f6cd574d EE NE OO PK
+W laboratorio05%s	laboratorio05.adb	laboratorio05.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-flteio.ads		20200819050644 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20200819050644 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-tiflio.ads		20200819050644 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20200819050644 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D lab05_extra.ads	20201023151512 4fe53a7d lab05_extra%s
+D lab05_extra.adb	20201104171038 72f58ebd lab05_extra%b
+D laboratorio05.ads	20201023151520 b9286d30 laboratorio05%s
+D system.ads		20200819050648 32a08138 system%s
+D s-conca5.ads		20200819050646 875e432e system.concat_5%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-exnint.ads		20200819050646 428c1c5c system.exn_int%s
+D s-expint.ads		20200819050646 192336fc system.exp_int%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [num_misterioso lab05_extra 4 14 none]
+G c Z s b [incluir_digito_control lab05_extra 7 14 none]
+G c Z s b [es_correcta lab05_extra 11 13 none]
+G c Z s b [incluir_digitos_iban lab05_extra 15 14 none]
+G r c none [incluir_digitos_iban lab05_extra 15 14 none] [digito_control laboratorio05 31 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|1r6 1r19 1r38 2r5 2r18 2r37
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 15|1w23 2r22
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 15|1w42 2r41
+X 8 a-textio.ads
+57K13*Text_IO 727e16 15|1w10 2r9
+264U14*New_Line 15|63s10 73s10 96s10
+465U14*Put 15|186s7
+X 14 lab05_extra.ads
+3K9*Lab05_Extra 21l5 21e16 15|4b14 189l5 189t16
+4U14*Num_Misterioso 4<29 15|10b14 53l8 53t22
+4a29 Num{string} 15|10b30 46r16 48m13 50m13
+7U14*Incluir_Digito_Control 7=37 15|59b14 76l8 76t30
+7a37 Tarjeta{16|4A12} 15|59b38 62r16 62r31 65r28 67r16 68r35 70r36 75m7
+11V13*Es_Correcta{boolean} 11>25 15|82b13 102l8 102t19
+11a25 Tarjeta{16|4A12} 15|82b25 86r16 88r28 90r16 91r35 93r36
+15U14*Incluir_Digitos_IBAN 15>35 15>52 15>59 15>81 16<7 15|108b14 187l8 187t28
+15a35 Pais{string} 15|108b36 150r48 150r53 153r48 153r53 161r41 161r46 161r60
+. 161r65
+15i52 BAnco{integer} 15|108b53 119r25 130r36 166r38
+15i59 Sucursal{integer} 15|108b60 120r25 135r37 167r39
+15a81 Numero_Cuenta{16|3A12} 15|108b82 126r28 145r16 146r35 178r42 180r42
+. 182r42
+16a7 IBAN{string} 15|108b112 161m7 161r12 161r24 163m7 163r12 166m10 167m10
+. 170m7 171m7 172m7 173m7 173r12 174m7 174r12 178m13 180m13 182m13 186r11
+X 15 lab05_extra.adb
+12i7 n{natural} 43m10 43r15 44r45 44r66 50r39
+15V16 cumple_las_restricciones{boolean} 15b16 15>41 26l11 26t35 44s20
+15i41 n{integer} 18r16 18r51 18r86 18r121 18r155 18r183 18r218 18r253 18r285
+. 20r16 20r51 20r89 20r127 20r165 20r203 20r241 20r279 20r313
+30V16 son_distintos{boolean} 30b16 30>30 40l11 40t24 44s52
+30i30 n{natural} 34r33 34r58
+32i14 i{integer} 34r20 34r42
+33i17 j{integer} 34r25 34r67
+46i11 i{integer} 47r13 48r17 50r17 50r50
+60i7 suma{natural} 65m13 65r21 68m16 68r24 70m16 70r24 75r27
+62i11 i{integer} 64r13 65r36 67r24 68r43 70r44
+83i7 suma{natural} 88m13 88r21 91m16 91r24 93m16 93r24 98r10
+84b7 es_correcta{boolean} 99m10 101r17
+86i11 i{integer} 87r13 88r36 90r24 91r43 93r44
+109i7 c1{natural} 123m7 139r33 173r47
+109i11 c2{natural} 126m7 142r33 174r47
+110a7 c1_vec{16|3A12} 116m7 117m7 119m10 120m10 123r28
+111i7 rem_97{natural} 130m10 130r21 135m11 135r22 139m7 139r18 142m7 142r18
+. 146m10 146r21 150m7 150r18 153m7 153r18 157m10 157r21 160r30
+112i7 codigo_control{natural} 160m7 161r94 161r146
+113i7 i_cuenta{natural}
+118i11 i{integer} 119r17 119r40 120r17 120r43
+129i11 i{integer} 130r52
+134i11 i{integer} 135r56
+145i11 i{integer} 146r49
+156i11 i{integer}
+165i11 i{integer} 166r15 166r55 167r15 167r59
+176i11 i{integer} 177r13 177r24 178r21 178r56 179r16 179r27 180r21 180r56
+. 181r16 181r27 182r21 182r56
+X 16 laboratorio05.ads
+1K9*Laboratorio05 14|1w6 2r5 16|34e18
+2A9*T_Vector(integer)<integer>
+3A12*T_Vector10{2A9}<integer> 14|15r96 15|108r100 110r15
+4A12*T_Vector16{2A9}<integer> 14|7r53 11r37 15|59r54 82r37
+31V13*Digito_Control{natural} 15|123s13 126s13
+

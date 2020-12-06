@@ -1,0 +1,25 @@
+PROCEDURE dia_anterior(yy: in out Natural; mm, dd: in out Positive) IS
+   es_bisiesto: Bolean := (if (yy rem 2 = 0) and ((yy rem 100 /= 0) or (yy rem 400 = 0)) then True else False); -- Comprobar si es bisiesto
+
+   -- Formula para calcular dias de cada mes, idea tomada de:
+   -- http://www.dispersiondesign.com/articles/time/number_of_days_in_a_month
+   dias_en_mm: Integer range 0..1 := 31 - (if mm ==2)
+BEGIN
+
+   if (dd = 0) then
+      dd := 31;
+      if (mm = 0) then
+         mm := 12;
+         if (yy = 0) then
+            raise constraint_error with "Ha llegado al último día a.C.";
+         else
+            yy := yy - 1;
+         end if;
+      else
+         mm := mm - 1;
+      end if;
+   else
+      dd := dd - 1;
+   end if;
+
+END dia_anterior;

@@ -1,0 +1,16 @@
+with ada.Text_IO, Ada.Integer_Text_IO, ada.Float_Text_IO;
+use ada.Text_IO, Ada.Integer_Text_IO, ada.Float_Text_IO;
+
+procedure prueba is
+   n_float: Float := 0.3;
+   function in_out(un_flotante: in out Float) return float is
+   begin
+      un_flotante := 6.6;
+      return 5.5;
+   end in_out;
+BEGIN
+   put("El float, al entrar a la funcion es: "); put(n_float, 2, 2, 0);
+   new_line;
+   put(in_out(n_float));
+   put("El float, al salir de la funcion es: " & n_float'img);
+END prueba;

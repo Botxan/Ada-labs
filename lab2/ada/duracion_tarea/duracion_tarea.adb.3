@@ -1,0 +1,23 @@
+PROCEDURE duracion_tarea(h, m, s: in out Natural; duracion: in Positive; dia_siguiente: out Boolean) IS
+   -- Pre: h, m, s son numeros Naturales y duracion que es un numero positivo (>0)
+   -- Post: hora de finalizacion de la tarea (h, m, s) y si ha cambiado el dia(cambio de jornada)(dia_siguiente: Boolean)
+   duracion_h: Natural := duracion / 3600;
+   duracion_m: Natural := (duracion / 60) rem 60;
+   duracion_s: Natural := duracion rem 60;
+BEGIN
+   if duracion < 14401 then
+
+      if (h + duracion_h = 16) and (m + duracion_m = 0) and (s + duracion_s = 0) then
+         dia_siguiente := True;
+
+         duracion_h :=
+
+         h := 8;
+         m := 0;
+         s := 0;
+      end if;
+
+   else
+      raise constraint_error with "La duracion de la tarea no puede exceder la media jornada.";
+   end if;
+END duracion_tarea;
