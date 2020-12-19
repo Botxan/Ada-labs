@@ -1,7 +1,0 @@
-FUNCTION par_o_impar(num: Integer) RETURN Boolean IS
-   par_o_impar: Boolean := (if num2 rem 2 = 0 then True)
-BEGIN
-
-   return par_o_impar
-
-END par_o_impar;

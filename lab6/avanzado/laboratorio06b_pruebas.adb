@@ -7,8 +7,8 @@ procedure laboratorio06b_pruebas IS
    V: T_Vector_Enteros(1..10);
    Texto: T_Info_Texto;
    palabras: t_palabras(1..Max_Palabras);
-   Matriz: T_Matriz(1..3, 1..4);
-   Matriz2: T_Matriz(-1..2, -2..1);
+   Matriz: T_Matriz(1..4, 1..4);
+   Matriz2: T_Matriz(1..5, 1..4);
 
    -- Tomas stuff
    array_tomas: T_Vector_Enteros(11..20) := (VACIO,0,0,0,0,0,0,0,0,0);
@@ -197,7 +197,7 @@ BEGIN
    new_line(3);
 
    V:= (1,1,2,2,3,3,4,4,5,5);
-   Put_Line("(1,1,2,2,3,3,4,4,5,5) despues de eliminar los valores repetidos mas lejanos al principio: (1,VACIO,2,VACIO,3,VACIO,4,VACIO,5,VACIO)");
+   Put_Line("(1,1,2,2,3,3,4,4,5,5) despues de eliminar los valores repetidos mas lejanos al principio: (1,2,3,4,5,VACIO,VACIO,VACIO,VACIO,VACIO)");
    Eliminar_Repetidos(V);
    for i in V'range loop
       put(V(i));
@@ -334,25 +334,28 @@ BEGIN
 
    new_line(2);
 
-   Matriz := ((1,4,2,8),
+   Matriz := ((1,4,2,3),
               (5,1,4,2),
-              (9,5,1,4));
-   Put_Line("Es la matriz (1,4,2,8), (5,1,4,2), (6,5,1,4) Toeplitz? FALSE");
+              (9,5,1,4),
+              (3,9,5,1));
+   Put_Line("Es la matriz (1,4,2,3), (5,1,4,2), (9,5,1,4), (3,9,5,1) Toeplitz? TRUE");
    put(Es_Toeplitz(Matriz)'img);
 
    new_line(2);
 
    Matriz := ((0,1,2,3),
-              (5,0,1,2),
-              (3,5,0,1));
-   Put_Line("Es la matriz (0,1,2,3), (5,0,1,2), (3,5,0,1) Toeplitz? FALSE");
+              (1,0,1,2),
+              (2,1,0,1),
+              (3,2,1,0));
+   Put_Line("Es la matriz (0,1,2,3), (5,0,1,2), (3,5,0,1) Toeplitz? TRUE");
    put(Es_Toeplitz(Matriz)'img);
 
    new_line(2);
 
-   Matriz := ((0,1,2,3),
-              (5,0,8,2),
-              (3,5,0,1));
+   Matriz := ((1,2,3,4),
+              (5,6,7,8),
+              (9,10,11,12),
+              (13,14,16,16));
    Put_Line("Es la matriz (0,1,2,3), (5,0,1,2), (3,5,8,1) Toeplitz? FALSE");
    put(Es_Toeplitz(Matriz)'img);
 
@@ -360,11 +363,13 @@ BEGIN
 
    Matriz := ((1,0,1,0),
               (0,1,0,1),
-              (1,1,1,0));
+              (1,0,1,0),
+              (0,1,1,1));
    Put_Line("Es la matriz (1,0,1,0), (0,1,0,1), (1,1,1,0) Toeplitz? FALSE");
    put(Es_Toeplitz(Matriz)'img);
 
    new_line(2);
+
    Matriz2 := ((0,0,0,0),
               (0,0,0,0),
               (0,0,0,0),
@@ -375,7 +380,8 @@ BEGIN
    Put_Line("0,0,0,0");
    Put_Line("0,0,0,0");
    Put_Line("0,0,0,0");
-   Put_Line("una matriz Toepliz? TRUE");
+   Put_Line("0,0,0,0");
+   Put_Line("una matriz Toepliz? FALSE");
    put(Es_Toeplitz(Matriz2)'img);
 
 END laboratorio06b_pruebas;

@@ -1,9 +1,0 @@
-WITH Ada.Integer_Text_IO, resultado_once;
-USE Ada.Integer_Text_IO;
-
-PROCEDURE main IS
-BEGIN
-
-   resultado_once();
-
-END

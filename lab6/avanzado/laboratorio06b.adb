@@ -104,11 +104,17 @@ package body Laboratorio06b is
    ------------------------
 
    procedure Eliminar_Repetidos (V: in out T_Vector_Enteros) is
+      j: Integer;
    begin
       for i in V'range loop
-         for j in V'range loop
+         j := i;
+         while j /= V'Last+1 loop
             if i /= j and V(j) /= VACIO and V(i) = V(j) then
-               V(j) := VACIO;
+               -- Slice para borrar elemento
+               V(j..V'Last-1) := V(j+1..V'Last);
+               V(V'Last) := VACIO;
+            else
+               j := j+1;
             end if;
          end loop;
       end loop;

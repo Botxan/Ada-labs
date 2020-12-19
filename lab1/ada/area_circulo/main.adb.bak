@@ -1,3 +1,0 @@
-WITH Ada.Float_Text_IO;
-USE Ada.Float_Text_IO;
-PROCEDURE IS
