@@ -7,6 +7,7 @@ Among all laboratories you can find programs related with:
 * Procedure and function specification
 * Type system
 * User input output
+* Character sequences
 * Arrays
 * Static and dynamic lists
 * ...
