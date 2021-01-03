@@ -8,5 +8,5 @@ Among all laboratories you can find programs related with:
 * Type system
 * User input output
 * Arrays
-* Static and dynamic Lists
+* Static and dynamic lists
 * ...
