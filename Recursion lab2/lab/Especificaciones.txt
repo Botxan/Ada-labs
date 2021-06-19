@@ -1,0 +1,23 @@
+Dicotómica
+φ ≡ { n≥1 }
+ψ ≡ { ⱻi(1≤i≤n ^ A(i)=x ^ pos=i) ˅ ¬ⱻi(1≤i≤n ^ A(i)=x ^ pos=-1) }
+
+Suma_vector
+φ ≡ { n≥1 ^ Ɐi(1≤i≤n → A(i)=ai }
+ψ ≡ { Ɐi(1≤i≤n → A(i)=Σ[desde j=1 hasta i]aj) }
+
+Menores
+φ ≡ { n≥1 }
+ψ ≡ { Ni(1≤i≤n ^ A(i)<x) }
+
+Escribir_mismo_orden
+φ ≡ { n≥1 }
+ψ ≡ { Ɐi(1≤i≤n → put(A(i))) }
+
+Escribir_orden_inverso
+φ ≡ { n≥1 }
+ψ ≡ { Ɐi(1≤i≤n → put(A(n-i+1))) }
+
+Vector_prefijo
+φ ≡ { 1≤m≤n }
+ψ ≡ { Ɐi(1≤i≤m → A(i)=B(i)) }
