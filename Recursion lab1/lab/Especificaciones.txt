@@ -1,0 +1,19 @@
+Potencia
+φ ≡ { true }
+ψ ≡ { 2^n }
+
+Dar_La_Vuelta
+φ ≡ { Ɐi(1≤i≤n → A(i)=ai) }
+ψ ≡ { Ɐi(1≤i≤n → A(i)=an-i+1) }
+
+Contiene
+φ ≡ { true }
+ψ ≡ { ⱻi(1≤i≤n ^ A(i)='a') }
+
+Num_Apariciones
+φ ≡ { true }
+ψ ≡ { Ni(1≤i≤n ^ A(i)='a') }
+
+Substring_aa
+φ ≡ { true }
+ψ ≡ { ⱻi(1≤i≤n ^ A(i)='a' ^ A(i+1)='a') }
