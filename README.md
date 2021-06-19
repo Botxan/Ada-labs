@@ -6,8 +6,9 @@ A set of programs mostly written in Ada and a bit of Python and C, aimed to lear
 Among all laboratories you can find programs related with:
 * Procedure and function specification
 * Type system
-* User input output
+* User I/O
 * Character sequences
 * Arrays
-* Static and dynamic lists
+* Static and dynamic or linked lists
+* Recursion
 * ...
